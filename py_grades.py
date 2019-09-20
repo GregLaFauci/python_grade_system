@@ -75,8 +75,7 @@ def addGrades():
 
 def studentReport():
     for student in students_list:
-        for i in range(len(students_list)):
-            print(" {} {} grades: {} final average: {}".format(student["first_name"], student["last_name"], ', '.join(map(str, student["grades"])), student["average"]))        
+        print(" {} {} grades: {} final average: {}".format(student["first_name"], student["last_name"], ', '.join(map(str, student["grades"])), student["average"]))        
         
             
 def print_menu():
